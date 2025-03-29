@@ -1,5 +1,30 @@
-body {
-    font-family: monospace;
+
+* {
+    color: var(--FontColor);
+    font-family: Helvetica;
+}
+
+
+
+:root { /*Representa o elemento <html> */
+    --green: #00FF00;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+.light-theme {
+    --bg: var(var(--green));
+    --fontColor: var(var(--black));
+     --btnBg: var(var(--black));
+     --btnFontCOlor: var(var(--white));
+}
+
+.dark-theme {
+    --bg: var(var(--black));
+    --FontColor: var(--green);
+    --btnFontCOlor: var(var(--white));
+    --btnBg: var(var(--black));
+    
 }
 
 ul {
@@ -14,12 +39,20 @@ li {
     list-style: square;
 }
 
-#msg {
-    font-family: monospace;
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
 }
 
-.list-theme {
-    color: #000000;
-    background: #00FF00;
-
+.btn:focus {
+    outline-style: none;
 }
+
+
